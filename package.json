@@ -20,7 +20,8 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "typeturajs": "^1.0.8"
   },
   "keywords": [
     "gatsby"
