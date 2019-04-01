@@ -5,22 +5,15 @@ import styled from 'styled-components';
 const ShellHeader = styled.header`
   background: rebeccapurple;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  grid-area: header;
 `
 
 const Header = ({ siteTitle }) => (
   <ShellHeader>
-    <h1 style={{ margin: 0 }}>
-      <Link
-        to="/"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-        }}
-      >
+    <h1>
+      <Link to="/">
         {siteTitle}
       </Link>
-
     </h1>
   </ShellHeader>
 )
