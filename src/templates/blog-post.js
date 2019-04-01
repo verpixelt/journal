@@ -23,11 +23,11 @@ function BlogPost(props) {
         url={url}
         pathname={props.location.pathname}
       />
-      <div>
+      <>
         <h1>{title}</h1>
         {thumbnail && <Img fluid={post.frontmatter.image.childImageSharp.fluid} />}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </>
     </Layout>
   )
 }

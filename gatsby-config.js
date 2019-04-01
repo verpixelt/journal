@@ -36,5 +36,6 @@ module.exports = {
         name: "pages",
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }
