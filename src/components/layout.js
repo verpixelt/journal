@@ -31,10 +31,35 @@ const GlobalStyles = createGlobalStyle`
   font-weight: 800;
 }
 
+html { box-sizing: border-box; }
+
 body {
   font-family: OutputSans;
   --tt-key: body;
   font-size: 22px;
+}
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p { margin-top: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 @keyframes body {
@@ -51,8 +76,9 @@ const AppShell = styled.div`
   display: grid;
   grid-template-areas: 'header header header'
                        'space-left main space-right';
-  grid-template-columns: 1fr minmax(320px, 60ch) 1fr;
-  grid-template-rows: minmax(100px, 200px) 1fr;
+  grid-template-columns: 1fr minmax(20em, 60ch) 1fr;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 2rem;
 `
 
 const Main = styled.main`

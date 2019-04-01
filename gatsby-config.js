@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Myblog - reactgo',
-    siteUrl: 'https://reactgo.com',
+    title: 'Journal – Kevin Lorenz – verpixelt',
+    siteUrl: 'https://kevinlorenz.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
