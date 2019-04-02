@@ -3,40 +3,25 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import styled, { createGlobalStyle } from 'styled-components';
-import * as fonts from '../fonts/fonts';
 import { Normalize } from 'styled-normalize'
 
 const GlobalStyles = createGlobalStyle`
-@font-face {
-  src: url('${fonts.OutputSansRegularWoff2}') format('woff2'),
-       url('${fonts.OutputSansRegularWoff}') format('woff');
-  font-family: 'OutputSans';
-  font-style: normal;
-  font-weight: 400;
-}
-
-  @font-face {
-  src: url('${fonts.OutputSansBoldWoff2}') format('woff2'),
-       url('${fonts.OutputSansBoldWoff}') format('woff');
-  font-family: 'OutputSans';
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  src: url('${fonts.OutputSansBlackWoff2}') format('woff2'),
-       url('${fonts.OutputSansBlackWoff}') format('woff');
-  font-family: 'OutputSans';
-  font-style: normal;
-  font-weight: 800;
+:root {
+  --serifFS: Georgia, 'Times New Roman', Times, serif;
+  --sansSerifFS: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --y: hsl(44, 96%, 64%);
 }
 
 html { box-sizing: border-box; }
 
 body {
-  font-family: OutputSans;
+  -webkit-font-smoothing: antialiased;
+  color: hsl(60, 2%, 33%);
+  /* font-family: OutputSans; */
+  font-family: var(--serifFS);
   --tt-key: body;
   font-size: 22px;
+  line-height: 1.2;
 }
 
 *,
@@ -44,7 +29,7 @@ body {
 *::after { box-sizing: inherit; }
 
 a {
-  color: initial;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -58,9 +43,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 800;
+  font-family: var(--sansSerifFS);
+  font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: -.6px;
 }
+
+h1 { margin-bottom: 1rem; }
 
 @keyframes body {
   0%, 20% {
@@ -76,9 +65,10 @@ const AppShell = styled.div`
   display: grid;
   grid-template-areas: 'header header header'
                        'space-left main space-right';
-  grid-template-columns: 1fr minmax(20em, 60ch) 1fr;
+  grid-template-columns: 1fr minmax(15em, 60ch) 1fr;
   grid-template-rows: auto 1fr;
-  grid-row-gap: 2rem;
+  grid-row-gap: 10rem;
+  padding: 6rem 2rem;
 `
 
 const Main = styled.main`
