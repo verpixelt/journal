@@ -4,25 +4,21 @@ import styled from 'styled-components';
 
 const ShellHeader = styled.header`
    grid-area: header;
-   display: flex;
-   justify-content: center;
 `
 const SiteTitle = styled.span`
   display: none;
 `
 
 const Logo = styled.svg`
-  max-width: 120px;
-  width: 24vw;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   fill: currentColor;
 `
 
 const Heading = styled.h1`
-  margin-bottom: 0;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  max-width: 120px;
+  width: 24vw;
 `
 
 const LinkLogo = styled(Link)`
