@@ -55,9 +55,22 @@ const GlobalStyles = createGlobalStyle`
     letter-spacing: -.6px;
   }
 
-  h1 { margin-bottom: 1rem; }
+  h1 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    --tt-key: h1;
+  }
 
   h2 { margin-bottom: .75rem; }
+
+  @keyframes h1 {
+    0%, 20% {
+      line-height: 1;
+    }
+    71.25% {
+      line-height: 1.1;
+    }
+  }
 
   @keyframes body {
     0%, 20% {
