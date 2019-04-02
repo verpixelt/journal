@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
     --tt-key: body;
     font-size: 28px;
     line-height: 1.3;
+    hyphens: auto;
   }
 
   p { margin-bottom: 2rem; }
