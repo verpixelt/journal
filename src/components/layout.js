@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --serifFS: Georgia, 'Times New Roman', Times, serif;
     --sansSerifFS: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --y: hsl(44, 96%, 64%);
+    --tc: hsl(60, 2%, 33%);
   }
 
   html { box-sizing: border-box; }
