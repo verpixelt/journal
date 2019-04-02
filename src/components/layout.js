@@ -40,6 +40,12 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
+  p > a {
+    background: linear-gradient(var(--y), var(--y)) no-repeat;
+    background-size: 100% .5em;
+    background-position: 0 .7em;
+  }
+
   h1,
   h2,
   h3,

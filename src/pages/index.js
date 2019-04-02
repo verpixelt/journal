@@ -15,7 +15,12 @@ const List = styled.ul`
 `
 
 const ListEl = styled.li`
-  &:not(:last-child) { margin-bottom: 6rem; }
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+    @media(min-width: 640px) {
+      margin-bottom: 6rem;
+    }
+  }
 `
 
 const Date = styled.time`
