@@ -1,5 +1,5 @@
 ---
-title: My first Blog post
+title: Publishing on your on terms
 description : This post is related to the gatsbyjs
 date: '2018-09-26'
 image: time.jpg
