@@ -12,7 +12,7 @@ const SiteTitle = styled.span`
 `
 
 const Logo = styled.svg`
-  max-width: 2.6em;
+  max-width: 80px;
   margin-left: auto;
   margin-right: auto;
   display: block;

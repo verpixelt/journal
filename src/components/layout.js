@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     color: hsl(60, 2%, 33%);
     font-family: var(--serifFS);
     --tt-key: body;
-    font-size: 1.75em;
+    font-size: 28px;
     line-height: 1.3;
   }
 
@@ -61,15 +61,15 @@ const GlobalStyles = createGlobalStyle`
 
   @keyframes body {
     0%, 20% {
-      font-size: 1.125em;
+      font-size: 16px;
       line-height: 1.2;
     }
     40% {
-      font-size: 1.375em;
+      font-size: 22px;
       line-height: 1.3;
     }
     71.25% {
-      font-size: 1.75em;
+      font-size: 26px;
       line-height: 1.35;
     }
   }
