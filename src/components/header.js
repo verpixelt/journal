@@ -12,12 +12,12 @@ const SiteTitle = styled.span`
 `
 
 const Logo = styled.svg`
-  max-width: 38%;
+  max-width: 120px;
+  width: 24vw;
   margin-left: auto;
   margin-right: auto;
   display: block;
   fill: currentColor;
-  width: 100%;
 `
 
 const Heading = styled.h1`
