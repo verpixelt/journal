@@ -82,10 +82,10 @@ const AppShell = styled.div`
   grid-template-columns: 1fr minmax(15em, 54ch) 1fr;
   grid-template-rows: auto 1fr;
   grid-row-gap: 10rem;
-  padding: 4rem 1rem;
+  padding: 64px 16px;
 
   @media(min-width: 640px) {
-    padding: 6rem 2rem;
+    padding: 96px 32px;
   }
 `
 
