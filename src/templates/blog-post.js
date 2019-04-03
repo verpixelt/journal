@@ -24,9 +24,9 @@ function BlogPost(props) {
         pathname={props.location.pathname}
       />
       <>
-        <h1>{title}</h1>
+
         {thumbnail && <Img fluid={post.frontmatter.image.childImageSharp.fluid} />}
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
       </>
     </Layout>
   )
