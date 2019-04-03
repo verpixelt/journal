@@ -11,7 +11,16 @@ const GlobalStyles = createGlobalStyle`
     --sansSerifFS: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --y: hsl(44, 96%, 64%);
     --tc: hsl(60, 2%, 33%);
+    --margin: 1rem;
+
+    @media(min-width: 640px) {
+      --margin: 2rem;
+    }
   }
+
+  ${'' /* li[data='--y'] {
+    color: var(--y);
+  } */}
 
   html { box-sizing: border-box; }
 
@@ -29,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
     hyphens: auto;
   }
 
-  picture {
+  picture:not(:last-child) {
     display: inline-block;
     margin-bottom: var(--margin);
     width: 100%;
@@ -41,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
-  p { margin-bottom: var(--margin); }
+  p:not(:last-child) { margin-bottom: var(--margin); }
 
   p + p {
     margin-top: calc(var(--margin) * -1);
@@ -53,10 +62,17 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  p > a:not(.gatsby-resp-image-link) {
+  p > a {
     background: linear-gradient(var(--y), var(--y)) no-repeat;
     background-size: 100% .5em;
     background-position: 0 .7em;
+  }
+
+  pre[class*="language-"] {
+    margin-top: 0;
+    margin-bottom: var(--margin);
+    tab-size: 2;
+    font-size: .8em;
   }
 
   h1,

@@ -2,6 +2,7 @@
 title: Ramblings about ownership
 description : This post is related to the gatsbyjs
 date: '2019-03-01'
+theme: '--r'
 ---
 
 # Ramblings about ownership

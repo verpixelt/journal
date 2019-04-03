@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const ListLink = styled(Link)`
   display: inline-block;
+  margin-bottom: var(--margin);
 `
 
 const List = styled.ul`
@@ -26,8 +27,14 @@ const ListEl = styled.li`
 const Date = styled.time`
   font-family: var(--sansSerifFS);
   display: block;
-  margin-bottom: .5rem;
   font-weight: 900;
+`
+
+const Title = styled.h1`
+  display: inline;
+  background: linear-gradient(var(--y), var(--y)) no-repeat;
+  background-size: 100% .4em;
+  background-position: 0 .8em;
 `
 
 const IndexPage = (props) => {
@@ -36,12 +43,12 @@ const IndexPage = (props) => {
     <Layout>
       <List>
         {postList.edges.map(({ node }, i) => (
-          <ListEl key={i}>
-            <ListLink to={node.fields.slug} className="link" >
-              <h1>{node.frontmatter.title}</h1>
+          <ListEl key={i} data-theme={node.frontmatter.theme}>
+            <ListLink to={node.fields.slug}>
+              <Title>{node.frontmatter.title}</Title>
+            </ListLink>
               <Date>{node.frontmatter.date}</Date>
               <span>{node.excerpt}</span>
-            </ListLink>
           </ListEl>
         ))}
       </List>
@@ -63,6 +70,7 @@ export const listQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
+            theme
           }
         }
       }
