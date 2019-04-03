@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Img from 'gatsby-image';
 import Metatags from '../components/Metatags';
-import Icon from '../images/gatsby-icon.png'
+import Icon from '../images/icon.png'
 import { graphql } from 'gatsby'
 
 function BlogPost(props) {
