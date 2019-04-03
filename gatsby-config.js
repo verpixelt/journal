@@ -17,7 +17,6 @@ module.exports = {
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     'gatsby-plugin-offline',
@@ -30,10 +29,24 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: ["gatsby-remark-copy-linked-files"],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-remark-images`,
+      options: {
+        maxWidth: 1080,
       },
     },
   ],
