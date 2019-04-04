@@ -153,26 +153,50 @@ const Layout = ({ children }) => (
             title
           }
         }
+
+        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+                fields {
+                slug
+              }
+              frontmatter {
+                theme
+              }
+            }
+      }
+    }
       }
     `}
-    render={data => (
-      <AppShell>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'My fav blog' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <Normalize />
-        <GlobalStyles />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Main>
-          {children}
-        </Main>
-      </AppShell>
-    )}
+    render={data =>
+      {
+        const path = window.location.pathname === '/' ? '/' : window.location.pathname + '/';
+        const post = data.allMarkdownRemark.edges.find(({ node }) => node.fields.slug === path);
+        let theme = '--y'; //default
+        if (post) {
+          theme = post.node.frontmatter.theme;
+        }
+        console.log(data);
+        return (
+          <AppShell>
+            <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              { name: 'description', content: 'My fav blog' },
+            ]}
+            >
+              <html lang="en" />
+            </Helmet>
+            <Normalize />
+            <GlobalStyles />
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <Main theme={theme}>
+              {children}
+            </Main>
+          </AppShell>
+        );
+      }
+    }
   />
 );
 
