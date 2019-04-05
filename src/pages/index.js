@@ -16,6 +16,7 @@ const List = styled.ul`
 `
 
 const ListEl = styled.li`
+  &::before { display: none; }
   &:not(:last-child) {
     margin-bottom: 3rem;
     @media(min-width: 640px) {
