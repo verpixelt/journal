@@ -13,14 +13,8 @@ const GlobalStyles = createGlobalStyle`
     --tc: hsl(60, 2%, 33%);
     --margin: 1rem;
 
-    @media(min-width: 640px) {
-      --margin: 2rem;
-    }
+    @media(min-width: 640px) { --margin: 2rem; }
   }
-
-  ${'' /* li[data='--y'] {
-    color: var(--y);
-  } */}
 
   html { box-sizing: border-box; }
 
@@ -48,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     max-width: 100%;
     width: 100%;
+    border-radius: 2px;
   }
 
   p:not(:last-child) { margin-bottom: var(--margin); }
@@ -79,7 +74,8 @@ const GlobalStyles = createGlobalStyle`
   h2,
   h3,
   h4,
-  p { margin-top: 0; }
+  p,
+  ul { margin-top: 0; }
 
   h1,
   h2,
@@ -99,6 +95,30 @@ const GlobalStyles = createGlobalStyle`
 
   h2 { margin-bottom: .75rem; }
 
+  ul {
+    padding-left: 1em;
+    list-style: none;
+
+    @media(min-width: 1024px) { padding-left: 0; }
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      --square: .4em;
+      --theme: var(--y);
+
+      content: '';
+      width: var(--square);
+      height: var(--square);
+      background: var(--theme);
+      left: -1em;
+      top: calc(50% - (var(--square) / 2));
+      display: block;
+      position: absolute;
+    }
+  }
 
   @keyframes h1 {
     0%, 20% {
@@ -160,7 +180,7 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'My fav blog' },
+            { name: 'description', content: 'Kevin Lorenz – Journal – verpixelt' },
           ]}
         >
           <html lang="en" />
