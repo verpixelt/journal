@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layout';
 import styled from 'styled-components';
 
 const ListLink = styled(Link)`
@@ -42,7 +42,7 @@ const IndexPage = (props) => {
     <Layout>
       <List>
         {postList.edges.map(({ node }, i) => (
-          <ListEl key={i} data-theme={node.frontmatter.theme}>
+          <ListEl key={i}>
             <ListLink to={node.fields.slug}>
               <Title>{node.frontmatter.title}</Title>
             </ListLink>
@@ -69,7 +69,6 @@ export const listQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
-            theme
           }
         }
       }
