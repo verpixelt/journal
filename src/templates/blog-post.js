@@ -2,14 +2,21 @@ import React from 'react';
 import Layout from '../components/layout';
 import Img from 'gatsby-image';
 import Metatags from '../components/Metatags';
-import Icon from '../images/icon.png'
-import { graphql } from 'gatsby'
+import Icon from '../images/icon.png';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+
+const Date = styled.time`
+  font-family: var(--sansSerifFS);
+  display: block;
+  font-weight: 900;
+`
 
 function BlogPost(props) {
 
   const post = props.data.markdownRemark;
   const url = props.data.site.siteMetadata.siteUrl
-  const { title, description } = post.frontmatter;
+  const { title, description, date } = post.frontmatter;
   const thumbnail =
     post.frontmatter.image &&
     post.frontmatter.image.childImageSharp.resize.src
@@ -23,10 +30,12 @@ function BlogPost(props) {
         url={url}
         pathname={props.location.pathname}
       />
-      <>
+      <article>
+        <h1>{title}</h1>
+        <Date>{date}</Date>
         {thumbnail && <Img fluid={post.frontmatter.image.childImageSharp.fluid} />}
-        <article dangerouslySetInnerHTML={{ __html: post.html }} />
-      </>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
     </Layout>
   )
 }
@@ -40,6 +49,7 @@ export const query = graphql`
        frontmatter {
         title
         description
+        date(formatString: "MMMM Do YYYY")
        }
    }
 
