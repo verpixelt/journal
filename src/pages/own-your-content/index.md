@@ -2,7 +2,6 @@
 title: Own Your Content
 description : Own your content because then you are truly in charge
 date: '2019-04-04'
-theme: '--y'
 ---
 
 Over the last few weeks I came across more and more people reminding me about the whole content ownership debate once again. While platforms like [Medium](https://medium.com) allow basically everyone to publish content in mere minutes you'll always be at the mercy of these platforms. What doesn't sound like a big deal at first can become quite an issue later.
