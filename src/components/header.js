@@ -9,6 +9,8 @@ const ShellHeader = styled.header`
 const Logo = styled.svg`
   display: block;
   fill: currentColor;
+  max-width: 120px;
+  width: 24vw;
 `
 
 const Heading = styled.h1`
