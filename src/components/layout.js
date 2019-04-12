@@ -96,28 +96,8 @@ const GlobalStyles = createGlobalStyle`
   h2 { margin-bottom: .75rem; }
 
   ul {
-    padding-left: 1em;
+    padding-left: 0;
     list-style: none;
-
-    @media(min-width: 1024px) { padding-left: 0; }
-  }
-
-  li {
-    position: relative;
-
-    &::before {
-      --square: .4em;
-      --theme: var(--y);
-
-      content: '';
-      width: var(--square);
-      height: var(--square);
-      background: var(--theme);
-      left: -1em;
-      top: calc(50% - (var(--square) / 2));
-      display: block;
-      position: absolute;
-    }
   }
 
   @keyframes h1 {
