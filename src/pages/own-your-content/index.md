@@ -13,10 +13,13 @@ Like a lot of platforms with good intentions the intentions get overshadowed by 
 
 I've published a few articles on [Medium](https://medium.com) myself, mainly because it was in its early days, it was a good amount of hype going on around it plus I was in yet another state of redesigning my blog – iteration 500.
 But no matter what excuse I make up for not having had my shit together here we have it: It's early 2019 and I cannot read a story on Medium without getting prompted to some action by one of their pop-ups. Hell, after reading a bit I cannot even do this anymore because I've overextended my stay as a free user.
+![Medium.com Overlay Extend Your Stay](medium-overlay-1.png)
 
 Wait!? They hide content, I have written for anyone to read and learn from, from people who do not want or cannot pay money for an account. This was never my idea of creating and sharing knowledge on the web.
 
 I'm not saying it's wrong the company behind this platform is trying to make money and pay their bills. I don't agree on them doing this using my content and neither should you.
+![Medium.com Overlay Create An Account](medium-overlay-3.png)
+
 From hiding content behind a pay wall to completely removing entire platforms – you're at a company's mercy.
 [Killed by Google](https://killedbygoogle.com) displays best how quickly a product can lose its relevancy in todays digital age.
 You mostly do not know about a platform's goals, road map, business plan and / or changes to either of them. What once was the perfect app, set up for success, might not be there anymore one year later. Sure you will get the possibility to download your content before they turn off the lights. It's not like we're losing 12 years of musical data out of a sudden.
