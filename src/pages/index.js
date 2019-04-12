@@ -18,16 +18,9 @@ const List = styled.ul`
 const ListEl = styled.li`
   &:not(:last-child) {
     margin-bottom: 3rem;
-    @media(min-width: 640px) {
-      margin-bottom: 6rem;
-    }
-  }
-`
 
-const Date = styled.time`
-  font-family: var(--sansSerifFS);
-  display: block;
-  font-weight: 900;
+    @media(min-width: 640px) { margin-bottom: 6rem; }
+  }
 `
 
 const Title = styled.h1`
@@ -35,6 +28,12 @@ const Title = styled.h1`
   background: linear-gradient(var(--y), var(--y)) no-repeat;
   background-size: 100% .4em;
   background-position: 0 .8em;
+`
+
+const Date = styled.time`
+  font-family: var(--sansSerifFS);
+  display: block;
+  font-weight: 900;
 `
 
 const IndexPage = (props) => {
