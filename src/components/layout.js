@@ -65,7 +65,8 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  p > a {
+  article  p > a,
+  article  li > a {
     background: linear-gradient(var(--y), var(--y)) no-repeat;
     background-size: 100% .5em;
     background-position: 0 .7em;
@@ -103,9 +104,25 @@ const GlobalStyles = createGlobalStyle`
 
   h2 { margin-bottom: .75rem; }
 
-  ul {
-    padding-left: 0;
+  article ul {
+    padding-left: 1em;
     list-style: none;
+
+    @media(min-width: 640px) { padding-left: 0; }
+  }
+
+  article ul > li {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: .4em;
+      height: .4em;
+      background: var(--y);
+      position: absolute;
+      top: calc(50% - .2em);
+      left: -1em;
+    }
   }
 
   @keyframes h1 {
