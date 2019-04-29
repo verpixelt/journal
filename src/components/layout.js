@@ -52,6 +52,14 @@ const GlobalStyles = createGlobalStyle`
     text-indent: 1em;
   }
 
+  blockquote { margin: 0; }
+
+  blockquote > p {
+    padding: 1em;
+    background: var(--tc);
+    color: var(--y);
+  }
+
   a {
     color: inherit;
     text-decoration: none;

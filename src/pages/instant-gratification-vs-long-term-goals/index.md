@@ -13,7 +13,7 @@ We are our own worst enemies. In some of these kind of situations it is more obv
 
 What made it clearer to identify this behaviour in myself was hearing what Greg McKeown said in an interview with Matt D'Avella:
 
-"... we are saying no all the time and everybody is. What we are not aware of is that we are saying no. So we're just saying no in a compulsive way. Every time I check email I'm saying no to something. Every time I randomly go on social media or on YouTube which is its on kind of social media, every time you get pulled in some binge watching you're saying no to something."
+> "... we are saying no all the time and everybody is. What we are not aware of is that we are saying no. So we're just saying no in a compulsive way. Every time I check email I'm saying no to something. Every time I randomly go on social media or on YouTube which is its on kind of social media, every time you get pulled in some binge watching you're saying no to something."
 
 This stuck with me. It is burnt in like hot iron into flesh.
 
