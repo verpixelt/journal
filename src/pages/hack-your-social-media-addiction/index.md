@@ -17,9 +17,8 @@ A relative straight forward way to circumvent this from happening on your phone 
 Say hi to redirect extensions! And that’s the deal:
 Open a Google Doc and write down your life goals – the things that are essential to you. Save this document and setup the redirect extension to send you to this file whenever you try to access the social media site you’re currently still hooked to.
 
-Google Chrome: [Switcheroo](https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg)
-
-Firefox: [Redirecor](https://addons.mozilla.org/en-US/firefox/addon/redirector/)
+* Google Chrome: [Switcheroo](https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg)
+* Firefox: [Redirecor](https://addons.mozilla.org/en-US/firefox/addon/redirector/)
 
 Safari: Unfortunately I wasn’t able to find an extension that still works. If you come across one please send a link my way.
 
