@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Journal – Kevin Lorenz – verpixelt',
     siteUrl: 'https://kevinlorenz.com',
+    description: 'Personal online journal of Kevin Lorenz',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -40,5 +41,6 @@ module.exports = {
         name: "pages",
       },
     },
+    `gatsby-plugin-feed`,
   ],
 }
