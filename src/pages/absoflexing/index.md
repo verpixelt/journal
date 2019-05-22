@@ -18,3 +18,5 @@ Here we reach the interesting part and something I believe a bunch of the Flexbo
 [W3C spec](https://www.w3.org/TR/css-flexbox-1/#abspos-items)
 
 Especially the 2nd paragraph is interesting and threw me off a bit. Even tho the element is position absolute it’s static position is still determined by whatever the flex container is set to. Meaning if your flex container says: `justify-content: center; align-items: center;` you’ll end up with a perfectly centred, yet absolute positioned element. I was expecting a static position of `top: 0; left: 0;`. As we can clearly see I was wrong. I do like this behaviour to be quite honest and its still completely controllable via overwrites.
+
+Here the codepen to get some visual representation of this:[https://codepen.io/verpixelt/pen/zQpWYL?editors=1100](https://codepen.io/verpixelt/pen/zQpWYL?editors=1100).
